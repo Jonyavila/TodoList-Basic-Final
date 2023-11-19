@@ -1,0 +1,107 @@
+/* Estilos para el formulario de tareas */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: #D5B58E;
+}
+form {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-form {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+div#root{
+  text-align: center;
+}
+div.app{
+  text-align: center;
+  display: inline-table;
+}
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+}
+button.btn-confdelete{
+  background-color: #32a852;
+  margin: 10px;
+  padding: 10px;
+  width: 50px;
+}
+button.btn-cancdelete{
+  background-color: #a83232;
+  margin: 10px;
+  padding: 10px;
+  width: 50px;
+}
+
+
+/* Estilos para las tarjetas */
+.card {
+background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content span {
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos para los botones */
+button {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #576A32;
+  color: #FFFFE1;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+
+button.complete-btn {
+  background-color: #32a852;
+  color: white;
+}
+
+button.uncomplete-btn {
+  background-color: #3263a8;
+  color: white;
+}
+
+button.delete-btn {
+  background-color: #a83232;
+  color: white;
+}
